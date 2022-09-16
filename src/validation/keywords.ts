@@ -69,6 +69,7 @@ const network = (ajv: Ajv) => {
 };
 
 const bignumber = (ajv: Ajv) => {
+    // @ts-ignore
     const instanceOf = ajvKeywords.get("instanceof").definition;
     instanceOf.CONSTRUCTORS.BigNumber = BigNumber;
 
